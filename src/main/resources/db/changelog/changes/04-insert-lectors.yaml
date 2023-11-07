@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-lectors
+      author: Iryna_Mekh
+      changes:
+        - insert:
+            tableName: lectors
+            columns:
+              - column: {name: first_name, value: "Bob"}
+              - column: {name: last_name, value: "Smith"}
+              - column: {name: salary, value: 20000}
+              - column: {name: degree, value: "ASSISTANT"}
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Alise" }
+              - column: { name: last_name, value: "Boyi" }
+              - column: { name: salary, value: 40000 }
+              - column: { name: degree, value: "ASSOCIATE_PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "John" }
+              - column: { name: last_name, value: "Potter" }
+              - column: { name: salary, value: 60000 }
+              - column: { name: degree, value: "PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Lisa" }
+              - column: { name: last_name, value: "Potter" }
+              - column: { name: salary, value: 60000 }
+              - column: { name: degree, value: "PROFESSOR" }
