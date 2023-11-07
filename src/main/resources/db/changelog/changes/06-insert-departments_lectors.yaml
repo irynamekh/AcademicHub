@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-departments-lectors
+      author: Iryna_Mekh
+      changes:
+        - insert:
+            tableName: departments_lectors
+            columns:
+              - column: { name: department_id, value: 1}
+              - column: { name: lector_id, value: 1}
+        - insert:
+            tableName: departments_lectors
+            columns:
+              - column: { name: department_id, value: 2}
+              - column: { name: lector_id, value: 2}
+        - insert:
+            tableName: departments_lectors
+            columns:
+              - column: { name: department_id, value: 3}
+              - column: { name: lector_id, value: 3}
+        - insert:
+            tableName: departments_lectors
+            columns:
+              - column: { name: department_id, value: 4}
+              - column: { name: lector_id, value: 4}

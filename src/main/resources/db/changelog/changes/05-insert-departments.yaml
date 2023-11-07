@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-departments
+      author: Iryna_Mekh
+      changes:
+        - insert:
+            tableName: departments
+            columns:
+              - column: { name: name, value: "Gryffindor" }
+              - column: { name: head_id, value: "1" }
+        - insert:
+            tableName: departments
+            columns:
+              - column: { name: name, value: "Slytherin" }
+              - column: { name: head_id, value: "2" }
+        - insert:
+            tableName: departments
+            columns:
+              - column: { name: name, value: "Hufflepuff" }
+              - column: { name: head_id, value: "3" }
+        - insert:
+            tableName: departments
+            columns:
+              - column: { name: name, value: "Ravenclaw" }
+              - column: { name: head_id, value: "4" }
