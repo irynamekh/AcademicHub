@@ -48,7 +48,7 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     private String getStatisticDto(String statistic) {
-        String[] degrees = {"assistans", "associateProfessors", "professors"};
+        String[] degrees = {"assistans", "associate professors", "professors"};
         int[] array = Arrays.stream(statistic.split(","))
                 .mapToInt(Integer::parseInt)
                 .toArray();
