@@ -6,28 +6,126 @@ databaseChangeLog:
         - insert:
             tableName: lectors
             columns:
-              - column: {name: first_name, value: "Bob"}
-              - column: {name: last_name, value: "Smith"}
-              - column: {name: salary, value: 20000}
-              - column: {name: degree, value: "ASSISTANT"}
+              - column: {name: first_name, value: "Albus"}
+              - column: {name: last_name, value: "Dumbledore"}
+              - column: {name: salary, value: 100000}
+              - column: {name: degree, value: "PROFESSOR"}
         - insert:
             tableName: lectors
             columns:
-              - column: { name: first_name, value: "Alise" }
-              - column: { name: last_name, value: "Boyi" }
-              - column: { name: salary, value: 40000 }
-              - column: { name: degree, value: "ASSOCIATE_PROFESSOR" }
-        - insert:
-            tableName: lectors
-            columns:
-              - column: { name: first_name, value: "John" }
-              - column: { name: last_name, value: "Potter" }
+              - column: { name: first_name, value: "Minerva" }
+              - column: { name: last_name, value: "McGonagall" }
               - column: { name: salary, value: 60000 }
               - column: { name: degree, value: "PROFESSOR" }
         - insert:
             tableName: lectors
             columns:
-              - column: { name: first_name, value: "Lisa" }
-              - column: { name: last_name, value: "Potter" }
+              - column: { name: first_name, value: "Severus" }
+              - column: { name: last_name, value: "Snape" }
+              - column: { name: salary, value: 60000 }
+              - column: { name: degree, value: "PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Godric" }
+              - column: { name: last_name, value: "Gryffindor" }
+              - column: { name: salary, value: 90000 }
+              - column: { name: degree, value: "PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Rowena" }
+              - column: { name: last_name, value: "Ravenclaw" }
+              - column: { name: salary, value: 90000 }
+              - column: { name: degree, value: "PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Helga" }
+              - column: { name: last_name, value: "Hufflepuff" }
+              - column: { name: salary, value: 90000 }
+              - column: { name: degree, value: "PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Salazar" }
+              - column: { name: last_name, value: "Slytherin" }
+              - column: { name: salary, value: 90000 }
+              - column: { name: degree, value: "PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Dolores" }
+              - column: { name: last_name, value: "Umbridge" }
+              - column: { name: salary, value: 40000 }
+              - column: { name: degree, value: "ASSOCIATE_PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Remus" }
+              - column: { name: last_name, value: "Lupin" }
+              - column: { name: salary, value: 40000 }
+              - column: { name: degree, value: "ASSOCIATE_PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Sybill" }
+              - column: { name: last_name, value: "Trelawney" }
+              - column: { name: salary, value: 40000 }
+              - column: { name: degree, value: "ASSOCIATE_PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Rubeus" }
+              - column: { name: last_name, value: "Hagrid" }
+              - column: { name: salary, value: 20000 }
+              - column: { name: degree, value: "ASSISTANT" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Filius" }
+              - column: { name: last_name, value: "Flitwick" }
+              - column: { name: salary, value: 20000 }
+              - column: { name: degree, value: "ASSISTANT" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Horace" }
+              - column: { name: last_name, value: "Slughorn" }
+              - column: { name: salary, value: 60000 }
+              - column: { name: degree, value: "PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Quirinus" }
+              - column: { name: last_name, value: "Quirrell" }
+              - column: { name: salary, value: 60000 }
+              - column: { name: degree, value: "PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Gilderoy" }
+              - column: { name: last_name, value: "Lockhart" }
+              - column: { name: salary, value: 40000 }
+              - column: { name: degree, value: "ASSOCIATE_PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Pomona" }
+              - column: { name: last_name, value: "Sprout" }
+              - column: { name: salary, value: 60000 }
+              - column: { name: degree, value: "PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Rolanda" }
+              - column: { name: last_name, value: "Hooch" }
+              - column: { name: salary, value: 60000 }
+              - column: { name: degree, value: "PROFESSOR" }
+        - insert:
+            tableName: lectors
+            columns:
+              - column: { name: first_name, value: "Silvanus" }
+              - column: { name: last_name, value: "Kettleburn" }
               - column: { name: salary, value: 60000 }
               - column: { name: degree, value: "PROFESSOR" }
