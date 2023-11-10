@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class DepartmentHeadNameController {
     private final DepartmentService departmentService;
+
     @Operation("Who is head of department (.+)")
     public void operate(String departmentName) {
         System.out.println("Head of " + departmentName + " department is "

@@ -1,6 +1,5 @@
 package academic.hub.service;
 
-import academic.hub.dto.DepartmentStatistics;
 import java.math.BigDecimal;
 
 public interface DepartmentService {

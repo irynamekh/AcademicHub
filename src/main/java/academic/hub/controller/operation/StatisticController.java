@@ -2,7 +2,6 @@ package academic.hub.controller.operation;
 
 import academic.hub.controller.Operation;
 import academic.hub.controller.OperationController;
-import academic.hub.dto.DepartmentStatistics;
 import academic.hub.service.DepartmentService;
 import java.util.Arrays;
 import java.util.stream.Collectors;
