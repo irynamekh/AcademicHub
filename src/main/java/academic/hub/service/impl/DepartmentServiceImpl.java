@@ -1,5 +1,6 @@
 package academic.hub.service.impl;
 
+import academic.hub.dto.DepartmentStatistics;
 import academic.hub.exception.EntityNotFoundException;
 import academic.hub.model.Department;
 import academic.hub.model.Lector;
@@ -25,10 +26,7 @@ public class DepartmentServiceImpl implements DepartmentService {
 
     @Override
     public String getStatistic(String departmentName) {
-        String statistic = departmentRepository.getStatistic(departmentName)
-                .orElseThrow(() -> new EntityNotFoundException(
-                        "Can't find department by name: " + departmentName));
-        return getStatisticDto(statistic);
+        return departmentRepository.getStatistic(departmentName);
     }
 
     @Override
@@ -45,15 +43,5 @@ public class DepartmentServiceImpl implements DepartmentService {
         return departmentRepository
                 .findByName(name).orElseThrow(() -> new EntityNotFoundException(
                         "Can't find department by name: " + name));
-    }
-
-    private String getStatisticDto(String statistic) {
-        String[] degrees = {"assistans", "associate professors", "professors"};
-        int[] array = Arrays.stream(statistic.split(","))
-                .mapToInt(Integer::parseInt)
-                .toArray();
-        return IntStream.range(0, degrees.length)
-                .mapToObj(i -> degrees[i] + " = " + array[i])
-                .collect(Collectors.joining(", "));
     }
 }

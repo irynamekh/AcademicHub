@@ -1,8 +1,11 @@
 package academic.hub;
 
-import academic.hub.service.StrategyHandler;
+import academic.hub.controller.OperationDispatcher;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import liquibase.Scope;
+import liquibase.ScopeManager;
+import liquibase.SingletonScopeManager;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -12,7 +15,7 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 @RequiredArgsConstructor
 public class HubApplication {
-    private final StrategyHandler strategyHandler;
+    private final OperationDispatcher operationDispatcher;
 
     public static void main(String[] args) {
         SpringApplication.run(HubApplication.class, args);
@@ -22,7 +25,7 @@ public class HubApplication {
     public CommandLineRunner commandLineRunner() {
         return args -> {
             while (true) {
-                System.out.println("User Input: ");
+                System.out.print("User Input: ");
                 BufferedReader reader = new BufferedReader(
                         new InputStreamReader(System.in));
 
@@ -30,7 +33,7 @@ public class HubApplication {
                 if (input.equals("Exit")) {
                     break;
                 }
-                strategyHandler.process(input);
+                operationDispatcher.dispatch(input);
             }
         };
     }
