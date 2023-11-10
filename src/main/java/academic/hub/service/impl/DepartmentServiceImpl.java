@@ -1,15 +1,11 @@
 package academic.hub.service.impl;
 
-import academic.hub.dto.DepartmentStatistics;
 import academic.hub.exception.EntityNotFoundException;
 import academic.hub.model.Department;
 import academic.hub.model.Lector;
 import academic.hub.repository.DepartmentRepository;
 import academic.hub.service.DepartmentService;
 import java.math.BigDecimal;
-import java.util.Arrays;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
